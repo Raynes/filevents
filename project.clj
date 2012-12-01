@@ -1,4 +1,4 @@
-(defproject filevents "0.1.0-SNAPSHOT"
+(defproject filevents "0.1.0"
   :description "Code for watching for file system changes."
   :url "https://github.com/Raynes/filevents"
   :license {:name "Eclipse Public License"
