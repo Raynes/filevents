@@ -47,7 +47,8 @@
         (let [files (get-file-set dir)
               new-files (difference files old)]
           (doseq [file new-files]
-            (future (f :created file)))
+            (future (f :created file))
+            (watch-file file f))
           (recur files))))))
 
 (defn watch
