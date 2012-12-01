@@ -35,6 +35,11 @@ second because this can be slow for large directories because it must populate a
 set of files on each iteration and check it against the old set. For large
 directories, you might need to set the number higher.
 
+
+## Pronunciation
+
+Think of filaments.
+
 ## License
 
 Copyright © 2012 Anthony Grimes
