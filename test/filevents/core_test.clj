@@ -3,7 +3,11 @@
         filevents.core)
   (:require [fs.core :as fs]))
 
-(deftest watch-test 
+(deftest watch-test
+  ; Ensure files exist.
+  (fs/mkdirs "test/testdir")
+  (fs/mkdirs "test/testdir2")
+
   (let [check (atom nil)]
     (watch (fn [kind _] (swap! check (constantly kind))) "test/testdir2/bar" "test/testdir")
     (testing "Watches for created files"
