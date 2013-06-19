@@ -2,7 +2,7 @@
 /lib
 /classes
 /checkouts
-test/testdir*
+test/tmp*
 pom.xml
 *.jar
 *.class
