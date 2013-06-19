@@ -2,9 +2,12 @@
 /lib
 /classes
 /checkouts
+test/tmp*
 pom.xml
 *.jar
 *.class
 .lein-deps-sum
 .lein-failures
 .lein-plugins
+~*
+.*.swp
